@@ -70,7 +70,7 @@ Cílem bylo naučit se předpovídat počasí bez nutnosti otvírat okno. Model 
 meteorologických dat (teplota, pocitová teplota, rychlost větru a část dne) hádat, jestli venku sněží, 
 prší, je mlha, nebo jestli je ideální den na piknik.
 Součástí bylo i zkoumání dat, protože když už se v nich člověk hrabe, chce z toho taky něco pochopit..
-2. Co všechno jsem musela zvládnout a přežít
+2. Co všechno jsem musela zvládnout 
 Příprava dat – data potřebují řád, jinak je zmatek
 • Nejprve jsem si stáhla meteorologická data a zjistila, že syrová data jsou jako bordel na 
 stole – musí se uklidit.
