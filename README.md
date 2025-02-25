@@ -6,27 +6,27 @@ clouds", "mist", "light snow". Projekt zahrnoval i analýzu a vizualizaci dat pr
 a jeho výstupů.
 3. Použité metody a poznatky
 Příprava dat
-• Načetl/a jsem meteorologická data a provedl/a jejich zpracování.
-• Použil/a jsem LabelEncoder pro převod kategorií (části dne a popisy počasí) na číselné 
+• Načetla jsem meteorologická data a provedla jejich zpracování.
+• Použila jsem LabelEncoder pro převod kategorií (části dne a popisy počasí) na číselné 
 hodnoty.
-• Rozdělil/a jsem data na vstupní proměnné (teplota, pocitová teplota, rychlost větru, část 
+• Rozdělila jsem data na vstupní proměnné (teplota, pocitová teplota, rychlost větru, část 
 dne) a cílovou proměnnou (popis počasí).
 Strojové učení
-• Využil/a jsem RandomForestClassifier z knihovny scikit-learn jako klasifikační algoritmus.
-• Rozdělil/a jsem data na trénovací a testovací sadu v poměru 80:20 (train_test_split).
-• Vyhodnotil/a jsem model pomocí metrik jako přesnost (accuracy), matice záměn a 
+• Využila jsem RandomForestClassifier z knihovny scikit-learn jako klasifikační algoritmus.
+• Rozdělila jsem data na trénovací a testovací sadu v poměru 80:20 (train_test_split).
+• Vyhodnotila jsem model pomocí metrik jako přesnost (accuracy), matice záměn a 
 klasifikační report (precision, recall, F1-score).
 Vizualizace dat
-• Vytvořil/a jsem pokročilé vizualizace:
+• Vytvořila jsem pokročilé vizualizace:
 o Sloupcový graf porovnávající skutečné a predikované hodnoty.
 o Heatmapu (matici záměn) zobrazující chyby modelu.
 o Interaktivní graf zobrazující rozdělení počasí podle části dne pomocí knihovny Plotly.
 Interpretace výsledků
-• Pochopil/a jsem, že diagonála matice záměn reprezentuje správné predikce, zatímco hodnoty 
+• Pochopila jsem, že diagonála matice záměn reprezentuje správné predikce, zatímco hodnoty 
 mimo ni ukazují chyby.
 • Model měl největší úspěšnost u predikce "overcast clouds" a "light snow", ale například u 
 "light rain" selhával kvůli nedostatku dat.
-4. Odpovědi na klíčové otázky
+5. Odpovědi na klíčové otázky
 • Jak přesný je model?
 o Model dosáhl přesnosti 93,22 %.
 • Které kategorie počasí model predikuje dobře a které špatně?
@@ -37,7 +37,7 @@ o Nejčastěji docházelo k záměně mezi "mist" a "light snow".
 • Jaké jsou rozdíly v počasí během dne?
 o Nejčastější popis počasí odpoledne byl "overcast clouds", zatímco ráno se častěji 
 vyskytovalo "light snow".
-5. Interpretace grafů
+6. Interpretace grafů
 Sloupcový graf (skutečné vs. predikované hodnoty)
 • Ukazuje, jak model predikoval jednotlivé kategorie počasí.
 • Barvy reprezentují predikované hodnoty a jejich výška počet případů.
@@ -51,13 +51,13 @@ predikováno jako "mist".
 Interaktivní graf (část dne a počasí)
 • Ukazuje, jaké počasí je typické pro různé části dne.
 • Například "overcast clouds" převládá odpoledne, zatímco "light snow" je častější ráno.
-6. Časový odhad
+7. Časový odhad
 Celý projekt zabral dva dny:
 • Den 1: Příprava dat a trénink modelu.
 • Den 2: Vizualizace a analýza výsledků.
-7. Závěr
+8. Závěr
 Projekt ukázal, jak lze pomocí strojového učení predikovat popis počasí na základě historických dat. 
-Pracoval/a jsem s čištěním dat, trénoval/a model, analyzoval/a jeho výstupy a vytvořil/a vizualizace 
+Pracovala jsem s čištěním dat, trénovala model, analyzovala jeho výstupy a vytvořila vizualizace 
 pro lepší pochopení. Výsledky ukázaly, že model funguje dobře pro některé kategorie, ale selhává 
 tam, kde je málo dat. To poskytuje dobrý základ pro další vylepšení modelu.
 Možné zlepšení do budoucna:
@@ -69,22 +69,21 @@ Predikce počasí – Souhrn projektu
 Cílem bylo naučit se předpovídat počasí bez nutnosti otvírat okno. Model měl na základě vstupních 
 meteorologických dat (teplota, pocitová teplota, rychlost větru a část dne) hádat, jestli venku sněží, 
 prší, je mlha, nebo jestli je ideální den na piknik.
-Součástí bylo i zkoumání dat, protože když už se v nich člověk hrabe, chce z toho taky něco pochopit, 
-že jo? 
-2. Co všechno jsem musel/a zvládnout a přežít
-Příprava dat – aneb data potřebují řád, jinak je zmatek
-• Nejprve jsem si stáhl/a meteorologická data a zjistil/a, že syrová data jsou jako bordel na 
+Součástí bylo i zkoumání dat, protože když už se v nich člověk hrabe, chce z toho taky něco pochopit..
+2. Co všechno jsem musela zvládnout a přežít
+Příprava dat – data potřebují řád, jinak je zmatek
+• Nejprve jsem si stáhla meteorologická data a zjistila, že syrová data jsou jako bordel na 
 stole – musí se uklidit.
-• Kategorie jako "Morning", "Afternoon", "Evening" jsem převedl/a na čísla, protože modelu 
+• Kategorie jako "Morning", "Afternoon", "Evening" jsem převedla na čísla, protože modelu 
 bohužel slovní popisy moc neříkají.
-• Rozdělil/a jsem data na vstupní proměnné (teplota, pocitová teplota, vítr, část dne) a cílovou 
+• Rozdělila jsem data na vstupní proměnné (teplota, pocitová teplota, vítr, část dne) a cílovou 
 proměnnou (popis počasí).
-Strojové učení – aneb nechť les rozhodne
+Strojové učení -
 • Na scénu nastoupil RandomForestClassifier – protože jeden strom je fajn, ale celý les už má 
 co říct. 
-• Rozdělil/a jsem data na trénovací a testovací část (80:20), aby model neměl pocit, že mu 
+• Rozdělila jsem data na trénovací a testovací část (80:20), aby model neměl pocit, že mu 
 servíruju jen to, co chce slyšet.
-• Po pár testech jsem zjistil/a, že model si vede překvapivě dobře, ale občas si plete "mist" a 
+• Po pár testech jsem zjistila, že model si vede překvapivě dobře, ale občas si plete "mist" a 
 "light snow". Možná by pomohlo, kdyby si taky někdy otevřel okno...
 Vizualizace – protože bez grafů by to nebyla ta pravá datová magie
 • Sloupcový graf: Jak moc si model věří vs. jak moc se pletl. 
@@ -109,7 +108,7 @@ Heatmapa (matice záměn)
 • Ukazuje, kde model exceluje a kde by si měl dát pár doučovacích lekcí.
 • Hodnoty na diagonále = správné predikce. Hodnoty mimo = "ehm, no… skoro".
 Interaktivní graf (část dne a počasí)
-• Ideální na to, abych si naplánoval/a, kdy vzít pláštěnku a kdy sluneční brýle. 
+• Ideální na to, abych si naplánovala, kdy vzít pláštěnku a kdy sluneční brýle. 
 • Ukazuje, že "light snow" dominuje ráno, zatímco odpoledne je větší šance na "overcast 
 clouds".
 5. Jak dlouho to celé trvalo? 
@@ -121,5 +120,5 @@ Projekt mi ukázal, že předpovídat počasí není jen tak. Model byl docela p
 z vody (doslova). Vizualizace pomohly pochopit, kde se model daří a kde selhává.
 Co s tím dál? 
 • Sehnat víc dat pro ty kategorie, kde model tápe.
-• Vyzkoušet hlubší neuronové sítě – třeba by to byla lepší věštecká koule. 
+• Vyzkoušet hlubší neuronové sítě.
 • Optimalizovat model, protože co si budeme povídat, vždycky je co vylepšovat.
