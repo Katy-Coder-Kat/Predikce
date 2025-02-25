@@ -10,20 +10,30 @@
 ---
 
 ##  O projektu
-- ** Automatické stahování dat** – OpenWeather API každou minutu.
-- ** Predikční model** – RandomForestClassifier na základě historických dat.
-- ** Pokročilé vizualizace** – heatmapy, klasifikační matice, rozdělení počasí podle částí dne.
-- ** Analyzuje metriky jako**: teplota, pocitová teplota, rychlost větru, část dne.
-- ** Hodnocení modelu:** Accuracy, MSE, R2 skóre.
+-  Automatické stahování dat** – OpenWeather API každou minutu.
+-  Predikční model** – RandomForestClassifier na základě historických dat.
+-  Pokročilé vizualizace** – heatmapy, klasifikační matice, rozdělení počasí podle částí dne.
+-  Analyzuje metriky jako**: teplota, pocitová teplota, rychlost větru, část dne.
+-  Hodnocení modelu:** Accuracy, MSE, R2 skóre.
 
 ---
 
 ## jak spustit projekt?
 
-### 1️⃣ Klonování repozitáře:
-```bash
+1️⃣ Klonování repozitáře:
 git clone https://github.com/Katy-Coder-Kat/Predikce-pocasi.git
 cd Predikce-pocasi
+
+2️⃣ Instalace závislostí:
+pip install -r requirements.txt
+
+3️⃣ Spuštění automatického sběru dat:
+python "pocasi API.py"
+Tento skript se dotazuje OpenWeather API každou minutu a ukládá data do pocasi_data.csv.
+
+4️⃣ Spuštění predikčního modelu:
+python "predikce_modelu.py"
+Trénuje Random Forest Classifier a vyhodnocuje přesnost modelu.
 
 
 
