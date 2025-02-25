@@ -37,7 +37,7 @@ Trénuje Random Forest Classifier a vyhodnocuje přesnost modelu.
 
 
 
-## 🛠 **Použité technologie**
+##  **Použité technologie**
 ✅ **Python** (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)  
 ✅ **OpenWeather API** (automatické získávání dat)  
 ✅ **RandomForestClassifier** (strojové učení)  
@@ -45,7 +45,7 @@ Trénuje Random Forest Classifier a vyhodnocuje přesnost modelu.
 
 ---
 
-## 🔥 **Plán vývoje (Roadmap)**
+##  **Plán vývoje (Roadmap)**
 ✅ **1. Implementace základního modelu (RandomForestClassifier)**  
 ✅ **2. Přidání vizualizace výsledků**  
 🟡 **3. Vylepšení přesnosti modelu**
